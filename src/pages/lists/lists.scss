@@ -1,0 +1,50 @@
+page-lists {
+
+    ion-content {
+        background: url(../assets/imgs/todo1.jpg) no-repeat center fixed;
+        background-size: cover;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#02362C,#003199);
+            opacity: .6; 
+        }
+    }
+
+    ion-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+      
+        ion-item{
+            width: 100% !important;
+            height: 50px;
+            border: none !important;
+            font-size: 17px;
+            background-color: rgb(185, 240, 174);
+            box-shadow: 0 3px 6px rgba(32, 16, 16, 0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+            margin-bottom: 16px !important;
+
+            .item-inner{
+                border: none !important;
+            }
+
+            .input-wrapper{
+                text-align: center;
+            }
+
+            &.selected-list{
+                background-color: rgb(71, 51, 51);
+                box-shadow: 0 3px 15px rgba(0,0,0,0.6) !important;
+                transition: background-color 0.3s ease-out;
+            }
+
+        }
+    }
+
+}

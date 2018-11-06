@@ -1,0 +1,52 @@
+page-todos {
+    .warning{
+        color:red;
+    }
+
+    ion-content {
+        background: url(../assets/imgs/todo3.jpg) no-repeat center fixed;
+        background-size: cover;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#02362C,#003199);
+            opacity: .6; 
+        }
+    }
+
+    h3:first-child{
+        margin-top: 0.3em !important; 
+    }
+
+    ion-list{
+
+        .no-todos{
+            color: aqua;
+            font-style: italic;
+            margin-top: 50px;
+            text-align: center;
+            background: transparent;
+            font-size: 1.3em;
+        }
+        .item-block .item-inner{
+            border: none !important;
+        }
+
+        .item-block:last-child{
+            border: none !important;
+        }
+
+        .item-divider{
+            border: none !important;
+            padding-top: 10px;
+            
+            background-color: transparent;
+            color: aqua;
+            font-style: italic;
+        }
+    }
+}
